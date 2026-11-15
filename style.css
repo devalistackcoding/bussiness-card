@@ -1,0 +1,54 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card{
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #283618;
+    color: #fefae0;
+    border-bottom: 8px solid #606c38;
+    border-radius: 5px;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    animation-duration: 3s;
+    animation-name: slide-in;
+
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+.card:hover{
+    transform: rotateY(10deg);
+}
+
+.card img{
+    width: 130px;
+    height: auto;
+}
+
+.blue-border{
+    border: 1px dotted blue
+}
+
+.center-text{
+    align-self: center;
+    
+}
